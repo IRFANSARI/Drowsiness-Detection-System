@@ -135,20 +135,6 @@ while True:
             (x, y) = landmarks[n]
             cv2.circle(frame, (x, y), 1, (255, 255, 255), -1)
 
-        # A = euclidean_distance(landmarks[61], landmarks[67])
-        # B = euclidean_distance(landmarks[62], landmarks[66])
-        # C = euclidean_distance(landmarks[63], landmarks[65])
-        # res = euclidean_distance(landmarks[60], landmarks[64])
-
-        # print("CHECK CHECK")
-
-        # print("[60]: " , landmarks[60] , "  [64]: " , landmarks[64] , "\tDist:" , res)
-        # print("[61]: " , landmarks[61] , "  [67]: " , landmarks[67] , "\tDist:" , A)
-        # print("[62]: " , landmarks[62] , "  [66]: " , landmarks[66] , "\tDist:" , B)
-        # print("[63]: " , landmarks[63] , "  [65]: " , landmarks[65] , "\tDist:" , C)
-
-        # print(A + B + C, " == ", res)
-
 
 
 
