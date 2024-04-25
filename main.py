@@ -1,22 +1,6 @@
 import cv2
 import dlib
 from imutils import face_utils
-from playsound import playsound
-
-# Initialize camera, detector and predictor
-print("[INFO] Loading Camera....")
-camera = cv2.VideoCapture(0)
-detector = dlib.get_frontal_face_detector()
-print("[INFO] Loading Predictor....")
-predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
-
-# Initialize variables
-sleep = 0
-yawn = 0
-active = 0
-status = ""
-eyeColor = (255, 255, 255)
-mouthColor = (255, 255, 255)
 
 # Function to compute Euclidean Distance between two points
 def euclidean_distance(ptA, ptB):
@@ -49,6 +33,22 @@ def isYawned(a, b, c, d, e, f, g, h):
         return True
     else:
         return False
+
+# Initialize variables
+sleep = 0
+yawn = 0
+active = 0
+status = ""
+eyeColor = (255, 255, 255)
+mouthColor = (255, 255, 255)
+
+
+# Initialize camera, detector and predictor
+print("[INFO] Loading Camera....")
+camera = cv2.VideoCapture(0)
+detector = dlib.get_frontal_face_detector()
+print("[INFO] Loading Predictor....")
+predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
 # Main loop
 while True:
@@ -97,7 +97,6 @@ while True:
                 sleep = 0
                 active = 0
                 status = "Sleeping"
-                # playsound("sound_files/alert.mp3")
         else:
             yawn = 0
             sleep = 0
@@ -131,12 +130,9 @@ while True:
 
 
         # To display all the landmarks on the face
-        for n in range(0, 68):
-            (x, y) = landmarks[n]
-            cv2.circle(frame, (x, y), 1, (255, 255, 255), -1)
-
-
-
+        # for n in range(0, 68):
+        #     (x, y) = landmarks[n]
+        #     cv2.circle(frame, (x, y), 1, (255, 255, 255), -1)
 
     cv2.imshow("Drowsiness Detection System", frame)
     # cv2.imshow("Result of detector", face_frame)
