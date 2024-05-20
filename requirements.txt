@@ -1,3 +1,0 @@
-whl
-opencv-python
-imutils
