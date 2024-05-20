@@ -13,7 +13,7 @@
     git clone https://github.com/IRFANSARI/Drowsiness-Detection-System.git
     cd Drowsiness-Detection-System
     ```
-  * To install all the dependencies which will be required, double click on ```install_dependencies.bat``` file or write this command on cmd.
+  * To install all the dependencies which will be required, double click on ```install_dependencies.bat``` file or write this command on cmd and wait for it to finish.
     ```
     ./install_dependencies.bat
     ```
