@@ -9,4 +9,11 @@
 
 ## Installation:
   * First of all, clone this repository on your pc.
-    ```git clone 
+    ```
+    git clone https://github.com/IRFANSARI/Drowsiness-Detection-System.git
+    cd Drowsiness-Detection-System
+    ```
+  * To install all the dependencies which will be required, double click on ```install_dependencies.bat``` file or write this command on cmd.
+    ```./install_dependencies.bat```
+  * Now all the installation process is done. Just run the python file ```drowsiness_detection_system.py``` by writing the below command on the cmd.
+    ```python drowsiness_detection_system.py```
