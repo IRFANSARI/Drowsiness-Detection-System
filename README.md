@@ -19,7 +19,7 @@
     start install_dependencies.bat
     ```
     
-## Run
+## Running the program
   * Now all the installation process is done. Just run the python file ```drowsiness_detection_system.py``` by writing the below command on the cmd.
     ```
     python drowsiness_detection_system.py
